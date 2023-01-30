@@ -3,12 +3,55 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+	 <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
+	<div class="container">
+  <h2>Internship Form</h2>
+ 
+  <form class="form-inline" action="/action_page.php">
+	  <div class="form-group">
+      <label for="fname">First Name</label>
+      <input type="name" class="form-control" id="fname"  name="fname">
+    </div>
+	    <div class="form-group">
+      <label for="lname">Last Name</label>
+      <input type="name" class="form-control" id="lname"  name="lname">
+    </div>
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" class="form-control" id="email" placeholder="xyz@abc.com" name="email">
+    </div><br>
+     <div class="form-group">
+      <label for="clg">College</label>
+      <input type="name" class="form-control" id="clg"  name="clg">
+    </div>
+	  <div class="form-group">
+      <label for="sel1">Graduation Year</label>
+      <select class="form-control" id="sel1">
+		   <option>Choose...</option>
+        <option>2020</option>
+        <option>2021</option>
+        <option>2022</option>
+        <option>2023</option>
+      </select>
+		   </div>
+	   <div class="form-group">
+      <label for="rn">Roll No.</label>
+      <input type="password" class="rn" id="rn"  name="rn">
+    </div><br>
+    <div class="checkbox">
+      <label><input type="checkbox" name="Agree to terms and conditions">Agree to terms and conditions</label>
+    </div><br>
+    <button type="submit" class="btn btn-default">Submit form</button>
+  </form>
+</div>
 </script>
 
 </body>
